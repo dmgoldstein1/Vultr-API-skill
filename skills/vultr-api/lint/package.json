@@ -5,5 +5,8 @@
   "description": "Vultr-specific OpenAPI lint tooling based on jq checks.",
   "scripts": {
     "lint:vultr-openapi": "./lint-vultr-openapi.sh ../../../openapi.json"
+  },
+  "devDependencies": {
+    "@stoplight/spectral-cli": "^6.16.0"
   }
 }

@@ -9,5 +9,6 @@
   ],
   "files.associations": {
     "openapi.json": "json"
-  }
+  },
+  "trivy.offlineScan": true
 }
