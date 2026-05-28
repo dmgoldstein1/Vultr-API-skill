@@ -1,0 +1,9 @@
+{
+  "name": "vultr-api-openapi-lint",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vultr-specific OpenAPI lint tooling based on jq checks.",
+  "scripts": {
+    "lint:vultr-openapi": "./lint-vultr-openapi.sh ../../../openapi.json"
+  }
+}

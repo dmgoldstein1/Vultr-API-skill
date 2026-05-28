@@ -1,0 +1,13 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "openapi.json"
+      ],
+      "url": "./skills/vultr-api/lsp/vultr-openapi.schema.json"
+    }
+  ],
+  "files.associations": {
+    "openapi.json": "json"
+  }
+}

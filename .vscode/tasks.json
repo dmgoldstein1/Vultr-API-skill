@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Lint Vultr OpenAPI",
+      "type": "shell",
+      "command": "./skills/vultr-api/lint/lint-vultr-openapi.sh openapi.json",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

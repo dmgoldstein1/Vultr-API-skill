@@ -1,0 +1,35 @@
+Vultr API Domain Map (from openapi.json)
+
+Quick facts
+- API version: v2
+- Base URL: https://api.vultr.com/v2
+- Auth: HTTP bearer token (API Key security scheme)
+- Approx operation count: 526
+
+High-volume domains
+- managed-databases: 66
+- iam: 52
+- instances: 41
+- Container Registry: 30
+- baremetal: 28
+- kubernetes: 26
+- VPCs: 21
+
+Common domains
+- load-balancer: 19
+- users: 19
+- organizations: 15
+- CDNs: 15
+- s3: 14
+- dns: 13
+- block: 12
+
+Example operation IDs
+- list-pullzones
+- create-pullzone
+- list-vpcs
+- create-vpc
+- list-nat-gateways
+- create-nat-gateway
+
+Use operationId-first matching whenever possible because it is less ambiguous than tag or path text alone.
