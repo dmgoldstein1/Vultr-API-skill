@@ -10,5 +10,10 @@
   "files.associations": {
     "openapi.json": "json"
   },
-  "trivy.offlineScan": true
+  "trivy.offlineScan": true,
+  "search.exclude": {
+    "**/*.code-search": false,
+    "**/bower_components": false,
+    "**/node_modules": false
+  }
 }
