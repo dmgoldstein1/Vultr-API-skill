@@ -4,7 +4,8 @@
   "private": true,
   "description": "Vultr-specific OpenAPI lint tooling based on jq checks.",
   "scripts": {
-    "lint:vultr-openapi": "./lint-vultr-openapi.sh ../../../openapi.json"
+    "lint:vultr-openapi": "./lint-vultr-openapi.sh ../../../openapi.json",
+    "validate:api-call": "node validate-api-call.js"
   },
   "overrides": {
     "glob": "^13.0.6"

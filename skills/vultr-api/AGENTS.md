@@ -2,6 +2,19 @@
 
 This file defines suggested specialist roles when using the Vultr API skill in multi-agent workflows.
 
+## Request Validator
+
+Purpose:
+
+- Validate a planned API call against the OpenAPI contract before it is executed.
+
+Responsibilities:
+
+- Run `node ./skills/vultr-api/lint/validate-api-call.js` with the intended method, path, query params, and body.
+- Block execution if the linter exits non-zero and report every ERROR line to the user.
+- Surface WARN lines as advisory notes.
+- Confirm a clean validation result before handing off to the Request Composer for final formatting.
+
 ## Endpoint Scout
 
 Purpose:
@@ -41,5 +54,6 @@ Responsibilities:
 ## Workflow
 
 1. Endpoint Scout resolves operation(s).
-2. Request Composer assembles request sequence.
-3. Failure Analyst validates and hardens error handling.
+2. **Request Validator validates the planned call** (run `validate-api-call.js`; fix errors before continuing).
+3. Request Composer assembles request sequence.
+4. Failure Analyst validates and hardens error handling.

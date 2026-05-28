@@ -35,7 +35,19 @@ If required IDs are missing, ask for them or provide a discovery call first.
    - Base URL: https://api.vultr.com/v2
    - Header: Authorization: Bearer ${VULTR_API_KEY}
    - Content-Type: application/json for body requests.
-4. Validate payload fields against the operation requestBody schema.
+4. **Pre-flight validation (required before executing any API call):**
+   Run the API call linter to validate the planned request against the OpenAPI contract:
+   ```
+   node ./skills/vultr-api/lint/validate-api-call.js \
+     --method <METHOD> \
+     --path <PATH> \
+     [--query '<JSON object of query params>'] \
+     [--body '<JSON request body>'] \
+     [--spec ./openapi.json]
+   ```
+   - If the linter exits with a non-zero code, fix the reported errors before proceeding.
+   - Treat WARN lines as advisory; surface them to the user.
+   - Skip this step only when the runtime environment cannot execute Node.js; in that case, note the skip explicitly.
 5. Include safe execution notes:
    - Mention destructive impact for DELETE/replace operations.
    - Include retries and Retry-After handling for HTTP 429.
@@ -67,7 +79,8 @@ See ./references/domain-map.txt for high-volume endpoint groups and quick routin
 
 ## Tooling
 
-- Vultr linter: ./lint/lint-vultr-openapi.sh
+- API call pre-flight linter: ./lint/validate-api-call.js (Node.js, no extra deps)
+- Vultr OpenAPI spec linter: ./lint/lint-vultr-openapi.sh
 - Agent-agnostic LSP guide: ./lsp/README.md
 
 ## Examples

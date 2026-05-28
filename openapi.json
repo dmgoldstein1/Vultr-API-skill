@@ -7287,7 +7287,11 @@
             "description": "Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination)."
           }
         ],
-        "security": []
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/apikeys/{apikey-id}": {
@@ -7624,7 +7628,11 @@
             "description": "Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination)."
           }
         ],
-        "security": []
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/account": {
@@ -10216,7 +10224,11 @@
         },
         "operationId": "list-public-isos",
         "description": "List all Vultr Public ISOs.",
-        "security": []
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/object-storage": {
@@ -11116,7 +11128,11 @@
             "description": "Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination)."
           }
         ],
-        "security": []
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/object-storage/tiers": {
@@ -11184,7 +11200,11 @@
         "operationId": "list-object-storage-tiers",
         "description": "Get a list of all Object Storage Tiers.",
         "parameters": [],
-        "security": []
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/object-storage/clusters/{cluster-id}/tiers": {
@@ -11255,7 +11275,11 @@
         "operationId": "list-object-storage-cluster-tiers",
         "description": "Get a list of all Object Storage Tiers for a given Cluster.",
         "parameters": [],
-        "security": []
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/storage-gateways": {
@@ -12026,6 +12050,11 @@
         "description": "Update the DNS Domain. ",
         "tags": [
           "dns"
+        ],
+        "security": [
+          {
+            "API Key": []
+          }
         ]
       }
     },
@@ -12711,7 +12740,11 @@
             "description": "Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination)."
           }
         ],
-        "security": []
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/regions/{region-id}/availability": {
@@ -12809,7 +12842,11 @@
             "description": "Filter the results by type.\n\n| **Type** | **Description** |\n|----------|-----------------|\n| all | All available types |\n| vc2 | Cloud Compute |\n| vdc | Dedicated Cloud |\n| vhf | High Frequency Compute |\n| vhp | High Performance |\n| voc | All Optimized Cloud types |\n| voc-g | General Purpose Optimized Cloud |\n| voc-c | CPU Optimized Cloud |\n| voc-m | Memory Optimized Cloud |\n| voc-s | Storage Optimized Cloud |\n| vbm | Bare Metal |\n| vcg | Cloud GPU |\n"
           }
         ],
-        "security": []
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/load-balancers": {
@@ -14726,7 +14763,11 @@
             "description": "Filter the results by operating system.\n\n|   | Type | Description |\n| - | ------ | ------------- |\n|   | windows | All available plans that support windows |"
           }
         ],
-        "security": []
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/plans-metal": {
@@ -14819,7 +14860,11 @@
             "description": "Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination)."
           }
         ],
-        "security": []
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/bare-metals": {
@@ -22843,7 +22888,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       },
       "post": {
         "summary": "Create NodePool Label",
@@ -22887,7 +22937,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/kubernetes/clusters/{vke-id}/node-pools/{nodepool-id}/labels/{label-id}": {
@@ -22952,7 +23007,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       },
       "delete": {
         "summary": "Delete NodePool Label",
@@ -22974,7 +23034,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/kubernetes/clusters/{vke-id}/node-pools/{nodepool-id}/taints": {
@@ -23030,7 +23095,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       },
       "post": {
         "summary": "Create NodePool Taint",
@@ -23074,7 +23144,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/kubernetes/clusters/{vke-id}/node-pools/{nodepool-id}/taints/{taint-id}": {
@@ -23139,7 +23214,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       },
       "delete": {
         "summary": "Delete NodePool Taint",
@@ -23161,7 +23241,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/kubernetes/clusters/{vke-id}/node-pools/{nodepool-id}/nodes": {
@@ -23402,7 +23487,11 @@
         },
         "operationId": "get-kubernetes-versions",
         "description": "Get a list of supported Kubernetes versions",
-        "security": []
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/billing/history": {
@@ -31457,6 +31546,11 @@
             "lang": "Curl",
             "source": "curl \"https://api.vultr.com/v2/registry/{registry-id}/retention/rules\" \\\n  -X GET \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\""
           }
+        ],
+        "security": [
+          {
+            "API Key": []
+          }
         ]
       },
       "post": {
@@ -32217,7 +32311,6 @@
           "Container Registry"
         ],
         "description": "Get a single Robot in a Container Registry Subscription",
-        "operationID": "read-registry-robot",
         "security": [
           {
             "API Key": []
@@ -32257,7 +32350,8 @@
             "lang": "Curl",
             "source": "curl \"https://api.vultr.com/v2/registry/{registry-id}/robot/{robot-name}\" \\\n  -X GET \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\""
           }
-        ]
+        ],
+        "operationId": "read-registry-robot"
       },
       "put": {
         "summary": "Update Robot",
@@ -32461,7 +32555,6 @@
           "Container Registry"
         ],
         "description": "Get a single Artifact in a Container Registry Repository",
-        "operationID": "read-registry-repository-artifact",
         "security": [
           {
             "API Key": []
@@ -32504,7 +32597,8 @@
             "lang": "Curl",
             "source": "curl \"https://api.vultr.com/v2/registry/{registry-id}/repository/{repository-image}/artifact/{artifact-digest}\" \\\n  -X GET \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\""
           }
-        ]
+        ],
+        "operationId": "read-registry-repository-artifact"
       },
       "delete": {
         "summary": "Delete Artifact",
@@ -32512,7 +32606,6 @@
           "Container Registry"
         ],
         "description": "Deletes an Artifact from a Container Registry Repository",
-        "operationID": "delete-registry-repository-artifact",
         "security": [
           {
             "API Key": []
@@ -32548,7 +32641,8 @@
             "lang": "Curl",
             "source": "curl \"https://api.vultr.com/v2/registry/{registry-id}/repository/{repository-image}/artifact/{artifact-digest}\" \\\n  -X GET \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\""
           }
-        ]
+        ],
+        "operationId": "delete-registry-repository-artifact"
       }
     },
     "/registry/region/list": {
@@ -33406,7 +33500,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/vfs": {
@@ -33442,7 +33541,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       },
       "post": {
         "summary": "Create VFS",
@@ -33530,7 +33634,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/vfs/{vfs_id}": {
@@ -33573,7 +33682,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       },
       "put": {
         "summary": "Update VFS",
@@ -33634,7 +33748,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       },
       "delete": {
         "summary": "Delete VFS",
@@ -33671,7 +33790,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/vfs/{vfs_id}/attachments": {
@@ -33722,7 +33846,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/vfs/{vfs_id}/attachments/{vps_id}": {
@@ -33778,7 +33907,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       },
       "get": {
         "summary": "Get VFS Attachment",
@@ -33807,7 +33941,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       },
       "delete": {
         "summary": "Delete VFS Attachment",
@@ -33829,7 +33968,12 @@
           "422": {
             "description": "Bad Request"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/v2/policies": {
@@ -38772,7 +38916,12 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/v2/oidc/provider/{provider_id}/.well-known/openid-configuration": {
@@ -38815,7 +38964,12 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/v2/oidc/issuer": {
@@ -39159,7 +39313,12 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/v2/oidc/authorize": {
@@ -39228,7 +39387,12 @@
           "401": {
             "description": "Unauthorized"
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/v2/oidc/token": {
@@ -39300,7 +39464,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "API Key": []
+          }
+        ]
       }
     },
     "/v2/oidc/userinfo": {
