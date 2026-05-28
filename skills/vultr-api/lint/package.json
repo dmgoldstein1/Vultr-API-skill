@@ -6,6 +6,9 @@
   "scripts": {
     "lint:vultr-openapi": "./lint-vultr-openapi.sh ../../../openapi.json"
   },
+  "overrides": {
+    "glob": "^13.0.6"
+  },
   "devDependencies": {
     "@stoplight/spectral-cli": "^6.16.0"
   }
